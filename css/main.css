@@ -1,0 +1,141 @@
+*,
+*:after,
+*before{
+	box-sizing: border-box;
+}
+
+body{
+	background: #cccccb;
+	color: #fff;
+	margin: 0;
+	font: 14px  'Varela Round', sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(23,27,31, 0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(23,27,31, 0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(23,27,31, 0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(23,27,31, 0.5);
+}
+
+img{
+	border: 0;
+}
+
+a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+.page{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.visual{
+	height: 33.3%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+
+}
+
+.conteiner{
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 50px;
+}
+
+.logo{
+	float: left;
+}
+
+.nav{
+	float: right;
+	margin: 25px 0 0 0;
+}
+
+.nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav li{
+	float: left;
+	margin: 0 0 0 25px;
+}
+
+.nav li a{
+	padding: 12px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.nav li a:hover{
+	border-top: 4px solid #4acaff
+}
+
+.nav .button{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 52px;
+	padding: 0;
+
+}
+
+.nav .button:after,
+.nav .button:before,
+.nav .button span{
+	content: "";
+	height: 3px;
+	background: #FFF;
+	border-radius: 3px;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -1.5px;
+
+}
+
+.nav .button:after{
+	margin-top: 10px;
+}
+.nav .button:before{
+	margin-top: -14px;
+}
+
+.nav .button:hover{
+	border: none;
+}
+
+.nav .button:hover span{
+	opacity: 0;
+}
+
+.nav .button:hover:after,
+.nav .button:hover:before{
+	transform: rotate(-45deg);
+	margin-top: -1.5px;
+	background: #4acaff;
+}
+
+.nav .button:hover:before{
+	transform: rotate(45deg);
+}
